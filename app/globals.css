@@ -1,0 +1,651 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+:root {
+  /* Base Korean Traditional Theme - 단청 Dancheong colors */
+  --background: oklch(0.98 0.02 85);
+  --foreground: oklch(0.15 0.05 25);
+  --card: oklch(0.96 0.02 85);
+  --card-foreground: oklch(0.15 0.05 25);
+  --popover: oklch(0.98 0.02 85);
+  --popover-foreground: oklch(0.15 0.05 25);
+  --primary: oklch(0.45 0.15 15); /* Korean red */
+  --primary-foreground: oklch(0.98 0.02 85);
+  --secondary: oklch(0.35 0.12 240); /* Korean blue */
+  --secondary-foreground: oklch(0.98 0.02 85);
+  --muted: oklch(0.92 0.02 85);
+  --muted-foreground: oklch(0.45 0.03 25);
+  --accent: oklch(0.65 0.15 60); /* Korean yellow */
+  --accent-foreground: oklch(0.15 0.05 25);
+  --destructive: oklch(0.5 0.2 15);
+  --destructive-foreground: oklch(0.9 0.02 85);
+  --border: oklch(0.88 0.02 85);
+  --input: oklch(0.94 0.02 85);
+  --ring: oklch(0.45 0.15 15);
+  --chart-1: oklch(0.45 0.15 15);
+  --chart-2: oklch(0.35 0.12 240);
+  --chart-3: oklch(0.65 0.15 60);
+  --chart-4: oklch(0.25 0.08 140);
+  --chart-5: oklch(0.55 0.12 300);
+  --radius: 0.75rem;
+  --sidebar: oklch(0.98 0 0);
+  --sidebar-foreground: oklch(0.09 0 0);
+  --sidebar-primary: oklch(0.09 0 0);
+  --sidebar-primary-foreground: oklch(0.98 0 0);
+  --sidebar-accent: oklch(0.96 0 0);
+  --sidebar-accent-foreground: oklch(0.09 0 0);
+  --sidebar-border: oklch(0.9 0 0);
+  --sidebar-ring: oklch(0.09 0 0);
+}
+
+.dark {
+  /* Refined dark mode with pure black and white contrast */
+  --background: oklch(0.09 0 0);
+  --foreground: oklch(0.98 0 0);
+  --card: oklch(0.12 0 0);
+  --card-foreground: oklch(0.98 0 0);
+  --popover: oklch(0.09 0 0);
+  --popover-foreground: oklch(0.98 0 0);
+  --primary: oklch(0.98 0 0);
+  --primary-foreground: oklch(0.09 0 0);
+  --secondary: oklch(0.18 0 0);
+  --secondary-foreground: oklch(0.98 0 0);
+  --muted: oklch(0.18 0 0);
+  --muted-foreground: oklch(0.65 0 0);
+  --accent: oklch(0.18 0 0);
+  --accent-foreground: oklch(0.98 0 0);
+  --destructive: oklch(0.5 0.2 0);
+  --destructive-foreground: oklch(0.9 0 0);
+  --border: oklch(0.18 0 0);
+  --input: oklch(0.18 0 0);
+  --ring: oklch(0.98 0 0);
+  --chart-1: oklch(0.8 0 0);
+  --chart-2: oklch(0.7 0 0);
+  --chart-3: oklch(0.6 0 0);
+  --chart-4: oklch(0.4 0 0);
+  --chart-5: oklch(0.3 0 0);
+  --sidebar: oklch(0.12 0 0);
+  --sidebar-foreground: oklch(0.98 0 0);
+  --sidebar-primary: oklch(0.98 0 0);
+  --sidebar-primary-foreground: oklch(0.09 0 0);
+  --sidebar-accent: oklch(0.18 0 0);
+  --sidebar-accent-foreground: oklch(0.98 0 0);
+  --sidebar-border: oklch(0.18 0 0);
+  --sidebar-ring: oklch(0.98 0 0);
+}
+
+.korean-modern {
+  /* Modern Korean Theme - 한국 현대 */
+  --background: oklch(0.97 0.01 200);
+  --foreground: oklch(0.12 0.02 200);
+  --primary: oklch(0.25 0.08 200); /* Modern Korean navy */
+  --secondary: oklch(0.75 0.08 350); /* Soft pink */
+  --accent: oklch(0.55 0.12 180); /* Teal accent */
+  --muted: oklch(0.94 0.01 200);
+  --border: oklch(0.9 0.01 200);
+}
+
+.korean-vibrant {
+  /* Vibrant Korean Theme - 활기찬 한국 */
+  --background: oklch(0.99 0.01 50);
+  --foreground: oklch(0.08 0.02 50);
+  --primary: oklch(0.55 0.22 15); /* Bright Korean red */
+  --secondary: oklch(0.45 0.18 240); /* Vibrant blue */
+  --accent: oklch(0.75 0.2 60); /* Bright yellow */
+  --muted: oklch(0.95 0.01 50);
+  --border: oklch(0.85 0.02 50);
+}
+
+.korean-minimal {
+  /* Minimal Korean Theme - 간결한 한국 */
+  --background: oklch(0.99 0.005 40);
+  --foreground: oklch(0.08 0.01 40);
+  --primary: oklch(0.35 0.08 25); /* Warm charcoal */
+  --secondary: oklch(0.88 0.02 40); /* Warm light gray */
+  --accent: oklch(0.45 0.1 45); /* Muted amber */
+  --muted: oklch(0.96 0.005 40);
+  --border: oklch(0.9 0.01 40);
+  --card: oklch(0.98 0.005 40);
+  --card-foreground: oklch(0.08 0.01 40);
+  --popover: oklch(0.99 0.005 40);
+  --popover-foreground: oklch(0.08 0.01 40);
+  --primary-foreground: oklch(0.98 0.005 40);
+  --secondary-foreground: oklch(0.08 0.01 40);
+  --accent-foreground: oklch(0.98 0.005 40);
+  --muted-foreground: oklch(0.4 0.02 40);
+}
+
+.korean-sunset {
+  /* Korean Sunset Theme - 한국 석양 */
+  --background: oklch(0.98 0.02 30);
+  --foreground: oklch(0.1 0.03 30);
+  --primary: oklch(0.6 0.2 25); /* Warm sunset orange */
+  --secondary: oklch(0.4 0.15 350); /* Deep coral */
+  --accent: oklch(0.8 0.15 50); /* Golden yellow */
+  --muted: oklch(0.95 0.02 30);
+  --border: oklch(0.88 0.02 30);
+}
+
+.korean-ocean {
+  /* Korean Ocean Theme - 한국 바다 */
+  --background: oklch(0.96 0.02 220);
+  --foreground: oklch(0.12 0.03 220);
+  --primary: oklch(0.35 0.15 220); /* Deep ocean blue */
+  --secondary: oklch(0.6 0.12 200); /* Seafoam */
+  --accent: oklch(0.7 0.1 180); /* Aqua */
+  --muted: oklch(0.93 0.02 220);
+  --border: oklch(0.87 0.02 220);
+}
+
+.korean-forest {
+  /* Korean Forest Theme - 한국 숲 */
+  --background: oklch(0.97 0.02 140);
+  --foreground: oklch(0.08 0.03 140);
+  --primary: oklch(0.25 0.12 140); /* Deep forest green */
+  --secondary: oklch(0.45 0.1 120); /* Bamboo green */
+  --accent: oklch(0.6 0.15 80); /* Golden bamboo */
+  --muted: oklch(0.94 0.02 140);
+  --border: oklch(0.88 0.02 140);
+}
+
+.korean-cherry {
+  /* Korean Cherry Blossom Theme - 한국 벚꽃 */
+  --background: oklch(0.99 0.01 340);
+  --foreground: oklch(0.1 0.02 340);
+  --primary: oklch(0.6 0.15 340); /* Cherry blossom pink */
+  --secondary: oklch(0.8 0.08 320); /* Soft pink */
+  --accent: oklch(0.4 0.1 300); /* Plum */
+  --muted: oklch(0.96 0.01 340);
+  --border: oklch(0.9 0.01 340);
+}
+
+.korean-autumn {
+  /* Korean Autumn Theme - 한국 가을 */
+  --background: oklch(0.98 0.02 60);
+  --foreground: oklch(0.08 0.03 60);
+  --primary: oklch(0.5 0.18 40); /* Maple red */
+  --secondary: oklch(0.6 0.15 70); /* Golden yellow */
+  --accent: oklch(0.4 0.12 20); /* Burnt orange */
+  --muted: oklch(0.95 0.02 60);
+  --border: oklch(0.88 0.02 60);
+}
+
+.korean-midnight {
+  /* Korean Midnight Theme - 한국 자정 */
+  --background: oklch(0.08 0.02 260);
+  --foreground: oklch(0.95 0.02 260);
+  --primary: oklch(0.4 0.15 280); /* Midnight purple */
+  --secondary: oklch(0.3 0.12 240); /* Deep indigo */
+  --accent: oklch(0.6 0.18 300); /* Mystical violet */
+  --muted: oklch(0.12 0.02 260);
+  --border: oklch(0.18 0.02 260);
+  --card: oklch(0.1 0.02 260);
+  --card-foreground: oklch(0.95 0.02 260);
+  --popover: oklch(0.08 0.02 260);
+  --popover-foreground: oklch(0.95 0.02 260);
+}
+
+@theme inline {
+  --font-sans: var(--font-inter);
+  --font-serif: var(--font-playfair);
+
+  /* Updated to use Korean theme variables */
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+/* Added Korean traditional patterns */
+.pattern-dancheong {
+  background-image: repeating-linear-gradient(
+      45deg,
+      transparent,
+      transparent 8px,
+      oklch(0.45 0.15 15 / 0.1) 8px,
+      oklch(0.45 0.15 15 / 0.1) 16px
+    ),
+    repeating-linear-gradient(
+      -45deg,
+      transparent,
+      transparent 8px,
+      oklch(0.35 0.12 240 / 0.1) 8px,
+      oklch(0.35 0.12 240 / 0.1) 16px
+    );
+}
+
+.pattern-hanji {
+  background-image: radial-gradient(circle at 2px 2px, oklch(0.65 0.15 60 / 0.15) 1px, transparent 0);
+  background-size: 32px 32px;
+}
+
+.pattern-korean-wave {
+  background-image: repeating-linear-gradient(
+    90deg,
+    transparent,
+    transparent 20px,
+    oklch(0.45 0.15 15 / 0.08) 20px,
+    oklch(0.45 0.15 15 / 0.08) 40px
+  );
+}
+
+/* Added elegant geometric patterns for visual interest */
+.pattern-dots {
+  background-image: radial-gradient(circle at 1px 1px, rgba(0, 0, 0, 0.08) 1px, transparent 0);
+  background-size: 24px 24px;
+}
+
+.pattern-grid {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 0, 0, 0.03) 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+/* Refined animations for sophisticated feel */
+.animate-fade-in {
+  animation: fadeIn 0.8s ease-out forwards;
+}
+
+.animate-slide-up {
+  animation: slideUp 0.6s ease-out forwards;
+}
+
+/* Added new hero background animations */
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-float-delayed {
+  animation: float 6s ease-in-out infinite;
+  animation-delay: 2s;
+}
+
+.animate-float-slow {
+  animation: float 8s ease-in-out infinite;
+  animation-delay: 1s;
+}
+
+.animate-spin-slow {
+  animation: spin 20s linear infinite;
+}
+
+.animate-pulse-slow {
+  animation: pulse 4s ease-in-out infinite;
+}
+
+.animate-bounce-slow {
+  animation: bounce 3s ease-in-out infinite;
+}
+
+.animate-drift-right {
+  animation: driftRight 15s ease-in-out infinite;
+}
+
+.animate-drift-left {
+  animation: driftLeft 18s ease-in-out infinite;
+}
+
+.animate-slide-down {
+  animation: slideDown 8s ease-in-out infinite;
+}
+
+.animate-slide-down-delayed {
+  animation: slideDown 8s ease-in-out infinite;
+  animation-delay: 2s;
+}
+
+.animate-slide-right {
+  animation: slideRight 10s ease-in-out infinite;
+}
+
+.animate-slide-right-delayed {
+  animation: slideRight 10s ease-in-out infinite;
+  animation-delay: 3s;
+}
+
+/* Added falling cherry blossom leaves animation for cherry theme */
+@keyframes fallDown {
+  0% {
+    transform: translateY(-100vh) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100vh) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+@keyframes sway {
+  0%,
+  100% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(30px);
+  }
+}
+
+.animate-fall-1 {
+  animation: fallDown 8s linear infinite, sway 3s ease-in-out infinite;
+}
+
+.animate-fall-2 {
+  animation: fallDown 10s linear infinite, sway 4s ease-in-out infinite;
+  animation-delay: 2s, 1s;
+}
+
+.animate-fall-3 {
+  animation: fallDown 12s linear infinite, sway 5s ease-in-out infinite;
+  animation-delay: 4s, 2s;
+}
+
+.animate-fall-4 {
+  animation: fallDown 9s linear infinite, sway 3.5s ease-in-out infinite;
+  animation-delay: 1s, 0.5s;
+}
+
+.animate-fall-5 {
+  animation: fallDown 11s linear infinite, sway 4.5s ease-in-out infinite;
+  animation-delay: 3s, 1.5s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Added keyframes for hero background animations */
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes driftRight {
+  0%,
+  100% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(30px);
+  }
+}
+
+@keyframes driftLeft {
+  0%,
+  100% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(-30px);
+  }
+}
+
+@keyframes slideDown {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+}
+
+@keyframes slideRight {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+}
+
+/* Korean-inspired gradients */
+.gradient-korean-sunset {
+  background: linear-gradient(135deg, oklch(0.45 0.15 15) 0%, oklch(0.65 0.15 60) 50%, oklch(0.75 0.08 350) 100%);
+}
+
+.gradient-korean-mountain {
+  background: linear-gradient(135deg, oklch(0.35 0.12 240) 0%, oklch(0.25 0.08 140) 100%);
+}
+
+.gradient-korean-sky {
+  background: linear-gradient(135deg, oklch(0.85 0.05 200) 0%, oklch(0.75 0.08 350) 100%);
+}
+
+/* Elegant gradient overlays */
+.gradient-elegant {
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.4) 100%);
+}
+
+.gradient-subtle {
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.02) 0%, rgba(0, 0, 0, 0.08) 100%);
+}
+
+/* Added advanced animated background patterns */
+.pattern-flowing-waves {
+  background: linear-gradient(45deg, transparent 30%, oklch(0.45 0.15 15 / 0.1) 50%, transparent 70%),
+    linear-gradient(-45deg, transparent 30%, oklch(0.35 0.12 240 / 0.1) 50%, transparent 70%);
+  background-size: 60px 60px;
+  animation: flowingWaves 8s ease-in-out infinite;
+}
+
+.pattern-floating-petals {
+  background-image: radial-gradient(circle at 20% 50%, oklch(0.6 0.15 340 / 0.2) 2px, transparent 3px),
+    radial-gradient(circle at 80% 20%, oklch(0.8 0.08 320 / 0.15) 1px, transparent 2px),
+    radial-gradient(circle at 40% 80%, oklch(0.4 0.1 300 / 0.1) 1.5px, transparent 2.5px);
+  background-size: 80px 80px, 120px 120px, 100px 100px;
+  animation: floatingPetals 12s ease-in-out infinite;
+}
+
+.pattern-geometric-flow {
+  background-image: linear-gradient(
+      30deg,
+      oklch(0.25 0.08 200 / 0.1) 12%,
+      transparent 12.5%,
+      transparent 87%,
+      oklch(0.25 0.08 200 / 0.1) 87.5%
+    ),
+    linear-gradient(
+      150deg,
+      oklch(0.75 0.08 350 / 0.1) 12%,
+      transparent 12.5%,
+      transparent 87%,
+      oklch(0.75 0.08 350 / 0.1) 87.5%
+    ),
+    linear-gradient(
+      30deg,
+      oklch(0.55 0.12 180 / 0.1) 12%,
+      transparent 12.5%,
+      transparent 87%,
+      oklch(0.55 0.12 180 / 0.1) 87.5%
+    );
+  background-size: 80px 140px;
+  animation: geometricFlow 10s linear infinite;
+}
+
+.pattern-aurora {
+  background: linear-gradient(
+    45deg,
+    oklch(0.4 0.15 280 / 0.2) 0%,
+    oklch(0.3 0.12 240 / 0.15) 25%,
+    oklch(0.6 0.18 300 / 0.1) 50%,
+    oklch(0.4 0.15 280 / 0.2) 75%,
+    oklch(0.3 0.12 240 / 0.15) 100%
+  );
+  background-size: 400% 400%;
+  animation: aurora 15s ease-in-out infinite;
+}
+
+.pattern-mountain-mist {
+  background-image: radial-gradient(ellipse at top, oklch(0.25 0.12 140 / 0.15) 0%, transparent 50%),
+    radial-gradient(ellipse at bottom, oklch(0.45 0.1 120 / 0.1) 0%, transparent 50%);
+  background-size: 200px 100px, 300px 150px;
+  animation: mountainMist 20s ease-in-out infinite;
+}
+
+.pattern-sunset-glow {
+  background: radial-gradient(
+    ellipse at center,
+    oklch(0.6 0.2 25 / 0.2) 0%,
+    oklch(0.4 0.15 350 / 0.15) 30%,
+    oklch(0.8 0.15 50 / 0.1) 60%,
+    transparent 100%
+  );
+  background-size: 300px 200px;
+  animation: sunsetGlow 18s ease-in-out infinite;
+}
+
+/* Added keyframes for new animated patterns */
+@keyframes flowingWaves {
+  0%,
+  100% {
+    background-position: 0% 0%, 0% 0%;
+  }
+  50% {
+    background-position: 100% 100%, -100% -100%;
+  }
+}
+
+@keyframes floatingPetals {
+  0%,
+  100% {
+    background-position: 0% 0%, 0% 0%, 0% 0%;
+  }
+  33% {
+    background-position: 30% 30%, -30% 10%, 20% -20%;
+  }
+  66% {
+    background-position: -20% 20%, 40% -30%, -10% 30%;
+  }
+}
+
+@keyframes geometricFlow {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
+}
+
+@keyframes aurora {
+  0%,
+  100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+@keyframes mountainMist {
+  0%,
+  100% {
+    background-position: 0% 0%, 0% 100%;
+  }
+  50% {
+    background-position: 100% 0%, -100% 100%;
+  }
+}
+
+@keyframes sunsetGlow {
+  0%,
+  100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground antialiased;
+  }
+
+  /* Enhanced typography with Korean aesthetic */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-serif tracking-tight;
+  }
+
+  p {
+    @apply leading-relaxed;
+  }
+
+  /* Korean text styling */
+  .korean-text {
+    font-family: "Noto Sans KR", sans-serif;
+    font-weight: 500;
+  }
+}
