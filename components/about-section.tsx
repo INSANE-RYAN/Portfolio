@@ -37,7 +37,7 @@ export default function AboutSection() {
             <h2 className="text-5xl md:text-6xl font-serif font-bold text-primary tracking-tight">About Me</h2>
             <p className="text-2xl korean-text text-secondary font-medium mt-2">소개</p>
           </div>
-          <div className="w-16 h-1 bg-gradient-to-r from-primary via-accent to-secondary mx-auto mb-8 rounded-full"></div>
+          <div className="w-16 h-1 bg-linearfrom-primary via-accent to-secondary mx-auto mb-8 rounded-full"></div>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
             Passionate about creating digital experiences that blend creativity with functionality
           </p>
@@ -48,8 +48,8 @@ export default function AboutSection() {
 
         <div className="grid lg:grid-cols-2 gap-16 items-start">
           <div className="space-y-8">
-            <Card className="p-10 bg-gradient-to-br from-card/95 via-card/90 to-primary/5 backdrop-blur-md border-2 border-primary/30 shadow-2xl hover:shadow-3xl transition-all duration-500 hover:border-primary/50 pattern-hanji relative overflow-hidden group">
-              <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-secondary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+            <Card className="p-10 bg-linear-to-br from-card/95 via-card/90 to-primary/5 backdrop-blur-md border-2 border-primary/30 shadow-2xl hover:shadow-3xl transition-all duration-500 hover:border-primary/50 pattern-hanji relative overflow-hidden group">
+              <div className="absolute inset-0 bg-linear-to-br from-primary/5 via-transparent to-secondary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
               <CardContent className="p-0 relative z-10">
                 <div className="mb-8">
                   <h3 className="text-3xl font-serif font-semibold text-primary mb-2">Hello! I'm Sarthak</h3>
@@ -104,8 +104,8 @@ export default function AboutSection() {
           </div>
 
           <div className="space-y-8">
-            <Card className="p-10 bg-gradient-to-br from-card/95 via-card/90 to-secondary/5 backdrop-blur-md border-2 border-secondary/30 shadow-2xl hover:shadow-3xl transition-all duration-500 hover:border-secondary/50 pattern-korean-wave relative overflow-hidden group">
-              <div className="absolute inset-0 bg-gradient-to-br from-secondary/5 via-transparent to-accent/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+            <Card className="p-10 bg-linear-to-br from-card/95 via-card/90 to-secondary/5 backdrop-blur-md border-2 border-secondary/30 shadow-2xl hover:shadow-3xl transition-all duration-500 hover:border-secondary/50 pattern-korean-wave relative overflow-hidden group">
+              <div className="absolute inset-0 bg-linear-to-br from-secondary/5 via-transparent to-accent/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
               <CardContent className="p-0 relative z-10">
                 <div className="mb-8">
                   <h3 className="text-3xl font-serif font-semibold text-secondary mb-2">Technical Skills</h3>
@@ -128,7 +128,7 @@ export default function AboutSection() {
                               <Badge
                                 key={skill.name}
                                 variant="secondary"
-                                className="px-5 py-3 bg-gradient-to-r from-primary/10 to-secondary/10 border border-primary/20 hover:from-primary/20 hover:to-secondary/20 hover:border-primary/40 transition-all duration-300 group cursor-default shadow-sm hover:shadow-md"
+                                className="px-5 py-3 bg-linear-to-br from-primary/10 to-secondary/10 border border-primary/20 hover:from-primary/20 hover:to-secondary/20 hover:border-primary/40 transition-all duration-300 group cursor-default shadow-sm hover:shadow-md"
                               >
                                 <IconComponent className="w-4 h-4 mr-3 text-primary group-hover:text-secondary transition-colors" />
                                 <div className="flex flex-col">
@@ -145,8 +145,8 @@ export default function AboutSection() {
               </CardContent>
             </Card>
 
-            <Card className="p-8 bg-gradient-to-br from-primary via-primary/90 to-secondary shadow-2xl border-2 border-primary-foreground/20 hover:shadow-3xl transition-all duration-500 relative overflow-hidden group">
-              <div className="absolute inset-0 bg-gradient-to-br from-accent/20 via-transparent to-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+            <Card className="p-8 bg-linear-to-br from-primary via-primary/90 to-secondary shadow-2xl border-2 border-primary-foreground/20 hover:shadow-3xl transition-all duration-500 relative overflow-hidden group">
+              <div className="absolute inset-0 bg-linear-to-br from-accent/20 via-transparent to-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
               <div className="absolute top-0 right-0 w-32 h-32 bg-primary-foreground/10 rounded-full -translate-y-16 translate-x-16 pattern-dancheong"></div>
               <CardContent className="p-0 relative z-10 text-primary-foreground">
                 <div className="flex items-center space-x-6">

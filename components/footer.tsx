@@ -126,7 +126,7 @@ export default function Footer() {
                       href={item.href}
                       className="flex items-start space-x-3 text-muted-foreground hover:text-primary transition-colors duration-300 group"
                     >
-                      <IconComponent className="w-4 h-4 mt-0.5 flex-shrink-0 group-hover:scale-110 transition-transform" />
+                      <IconComponent className="w-4 h-4 mt-0.5 shrink-0 group-hover:scale-110 transition-transform" />
                       <div>
                         <span className="text-sm">{item.text}</span>
                         {item.korean && <p className="korean-text text-xs text-muted-foreground/70">{item.korean}</p>}

@@ -116,22 +116,22 @@ export default function AnimatedBackground({ variant = "section", className = ""
         <div className="absolute bottom-32 right-16 w-18 h-18 border-2 border-accent/25 rotate-12 animate-pulse-slow"></div>
 
         {/* Gradient orbs */}
-        <div className="absolute top-1/4 left-1/4 w-32 h-32 bg-gradient-to-r from-primary/20 to-transparent rounded-full blur-xl animate-drift-right"></div>
-        <div className="absolute bottom-1/3 right-1/4 w-40 h-40 bg-gradient-to-l from-secondary/15 to-transparent rounded-full blur-2xl animate-drift-left"></div>
+        <div className="absolute top-1/4 left-1/4 w-32 h-32 bg-linear-to-r from-primary/20 to-transparent rounded-full blur-xl animate-drift-right"></div>
+        <div className="absolute bottom-1/3 right-1/4 w-40 h-40 bg-linear-to-l from-secondary/15 to-transparent rounded-full blur-2xl animate-drift-left"></div>
         <div
-          className="absolute top-1/2 left-1/2 w-28 h-28 bg-gradient-to-r from-accent/25 to-transparent rounded-full blur-lg animate-drift-right"
+          className="absolute top-1/2 left-1/2 w-28 h-28 bg-linear-to-r from-accent/25 to-transparent rounded-full blur-lg animate-drift-right"
           style={{ animationDelay: "1s" }}
         ></div>
-        <div className="absolute top-16 right-1/4 w-36 h-36 bg-gradient-to-r from-primary/15 to-transparent rounded-full blur-2xl animate-drift-left"></div>
+        <div className="absolute top-16 right-1/4 w-36 h-36 bg-linear-to-r from-primary/15 to-transparent rounded-full blur-2xl animate-drift-left"></div>
 
         {/* Moving lines */}
         <div className="absolute inset-0 opacity-15">
-          <div className="absolute top-0 left-1/4 w-px h-full bg-gradient-to-b from-transparent via-primary to-transparent animate-slide-down"></div>
-          <div className="absolute top-0 right-1/3 w-px h-full bg-gradient-to-b from-transparent via-secondary to-transparent animate-slide-down-delayed"></div>
-          <div className="absolute top-1/4 left-0 w-full h-px bg-gradient-to-r from-transparent via-primary to-transparent animate-slide-right"></div>
-          <div className="absolute bottom-1/3 left-0 w-full h-px bg-gradient-to-r from-transparent via-accent to-transparent animate-slide-right-delayed"></div>
-          <div className="absolute top-0 left-1/2 w-px h-full bg-gradient-to-b from-transparent via-accent to-transparent animate-slide-down"></div>
-          <div className="absolute top-1/2 left-0 w-full h-px bg-gradient-to-r from-transparent via-secondary to-transparent animate-slide-right"></div>
+          <div className="absolute top-0 left-1/4 w-px h-full bg-linear-to-b from-transparent via-primary to-transparent animate-slide-down"></div>
+          <div className="absolute top-0 right-1/3 w-px h-full bg-linear-to-b from-transparent via-secondary to-transparent animate-slide-down-delayed"></div>
+          <div className="absolute top-1/4 left-0 w-full h-px bg-linear-to-r from-transparent via-primary to-transparent animate-slide-right"></div>
+          <div className="absolute bottom-1/3 left-0 w-full h-px bg-linear-to-r from-transparent via-accent to-transparent animate-slide-right-delayed"></div>
+          <div className="absolute top-0 left-1/2 w-px h-full bg-linear-to-b from-transparent via-accent to-transparent animate-slide-down"></div>
+          <div className="absolute top-1/2 left-0 w-full h-px bg-linear-to-r from-transparent via-secondary to-transparent animate-slide-right"></div>
         </div>
       </>
     )
@@ -143,7 +143,7 @@ export default function AnimatedBackground({ variant = "section", className = ""
       <div className={`absolute inset-0 ${getBackgroundPattern()} ${getOpacity()}`}></div>
 
       {/* Theme-specific gradient overlay */}
-      <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-secondary/5"></div>
+      <div className="absolute inset-0 bg-linear-to-br from-primary/5 via-transparent to-secondary/5"></div>
 
       {/* Animated elements for hero variant */}
       {getAnimatedElements()}

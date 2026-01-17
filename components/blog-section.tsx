@@ -132,7 +132,7 @@ export default function BlogSection() {
             <h2 className="text-5xl md:text-6xl font-serif font-bold text-primary tracking-tight">My Blog</h2>
             <p className="text-2xl korean-text text-secondary font-medium mt-2">내 블로그</p>
           </div>
-          <div className="w-20 h-1 bg-gradient-to-r from-primary via-accent to-secondary mx-auto mb-8 rounded-full"></div>
+          <div className="w-20 h-1 bg-linear-to-r from-primary via-accent to-secondary mx-auto mb-8 rounded-full"></div>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
             Sharing insights, experiences, and lessons learned on my journey as a developer and designer
           </p>
@@ -165,9 +165,9 @@ export default function BlogSection() {
           {filteredPosts.map((post) => (
             <Card
               key={post.id}
-              className="group overflow-hidden bg-gradient-to-br from-card/95 via-card/90 to-secondary/5 backdrop-blur-md border-2 border-secondary/30 hover:border-secondary/50 transition-all duration-500 hover:shadow-2xl pattern-korean-wave relative"
+              className="group overflow-hidden bg-linear-to-br from-card/95 via-card/90 to-secondary/5 backdrop-blur-md border-2 border-secondary/30 hover:border-secondary/50 transition-all duration-500 hover:shadow-2xl pattern-korean-wave relative"
             >
-              <div className="absolute inset-0 bg-gradient-to-br from-secondary/5 via-transparent to-accent/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              <div className="absolute inset-0 bg-linear-to-br from-secondary/5 via-transparent to-accent/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
               <CardContent className="p-0 relative z-10">
                 <div className="flex flex-col">
                   <div className="p-8">
@@ -230,7 +230,7 @@ export default function BlogSection() {
         </div>
 
         <div className="mt-20 text-center">
-          <div className="bg-gradient-to-br from-primary via-primary/90 to-secondary rounded-2xl p-12 text-primary-foreground shadow-2xl border-2 border-primary-foreground/20 relative overflow-hidden">
+          <div className="bg-linear-to-br from-primary via-primary/90 to-secondary rounded-2xl p-12 text-primary-foreground shadow-2xl border-2 border-primary-foreground/20 relative overflow-hidden">
             <div className="absolute top-0 right-0 w-32 h-32 bg-primary-foreground/10 rounded-full -translate-y-16 translate-x-16 pattern-dancheong"></div>
             <div className="relative z-10">
               <h3 className="text-3xl font-serif font-semibold mb-2">Stay Updated</h3>

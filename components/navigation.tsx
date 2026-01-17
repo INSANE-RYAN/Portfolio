@@ -20,7 +20,7 @@ export default function Navigation() {
     <nav className="fixed top-0 w-full z-50 bg-background/95 backdrop-blur-md border-b border-border pattern-hanji">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
-          <div className="flex-shrink-0">
+          <div className="shrink-0">
             <div className="flex flex-col">
               <h1 className="text-2xl font-serif font-bold text-primary tracking-tight">Sarthak</h1>
               <span className="text-xs korean-text text-muted-foreground tracking-wider">사르탁 • 창의적 개발자</span>
