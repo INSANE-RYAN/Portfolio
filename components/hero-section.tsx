@@ -72,19 +72,19 @@ export default function HeroSection() {
 
         <div className="flex justify-center space-x-8 mb-16 animate-slide-up" style={{ animationDelay: "0.8s" }}>
           <a
-            href="#"
+            href="https://github.com/INSANE-RYAN"
             className="text-muted-foreground hover:text-primary transition-all duration-300 hover:scale-110 p-2 rounded-full hover:bg-primary/10"
           >
             <Github className="w-7 h-7" />
           </a>
           <a
-            href="#"
+            href="https://www.linkedin.com/in/sarthak-gupta-a7544628b"
             className="text-muted-foreground hover:text-secondary transition-all duration-300 hover:scale-110 p-2 rounded-full hover:bg-secondary/10"
           >
             <Linkedin className="w-7 h-7" />
           </a>
           <a
-            href="#"
+            href="mailto:guptasarthak7890@gmail.com"
             className="text-muted-foreground hover:text-accent transition-all duration-300 hover:scale-110 p-2 rounded-full hover:bg-accent/10"
           >
             <Mail className="w-7 h-7" />

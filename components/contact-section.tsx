@@ -129,7 +129,7 @@ export default function ContactSection() {
             <h2 className="text-5xl md:text-6xl font-serif font-bold text-primary tracking-tight">Get In Touch</h2>
             <p className="text-2xl korean-text text-secondary font-medium mt-2">연락하기</p>
           </div>
-          <div className="w-20 h-1 bg-gradient-to-r from-primary via-accent to-secondary mx-auto mb-8 rounded-full"></div>
+          <div className="w-20 h-1 bg-linear-to-r from-primary via-accent to-secondary mx-auto mb-8 rounded-full"></div>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
             Ready to collaborate? Let's create something amazing together. I'm always excited to work on new projects
             and challenges.
@@ -141,8 +141,8 @@ export default function ContactSection() {
 
         <div className="grid lg:grid-cols-2 gap-12">
           <div className="space-y-6">
-            <Card className="bg-gradient-to-br from-card/95 via-card/90 to-primary/5 backdrop-blur-md border-2 border-primary/30 shadow-2xl pattern-korean-wave relative overflow-hidden group h-fit">
-              <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-secondary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+            <Card className="bg-linear-to-br from-card/95 via-card/90 to-primary/5 backdrop-blur-md border-2 border-primary/30 shadow-2xl pattern-korean-wave relative overflow-hidden group h-fit">
+              <div className="absolute inset-0 bg-linear-to-br from-primary/5 via-transparent to-secondary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
               <CardContent className="p-6 relative z-10">
                 <div className="mb-6">
                   <h3 className="text-2xl font-serif font-semibold text-primary mb-2">Send me a message</h3>
@@ -258,8 +258,8 @@ export default function ContactSection() {
               </CardContent>
             </Card>
 
-            <Card className="bg-gradient-to-br from-card/95 via-card/90 to-accent/5 backdrop-blur-md border-2 border-accent/30 shadow-2xl relative overflow-hidden group">
-              <div className="absolute inset-0 bg-gradient-to-br from-accent/5 via-transparent to-primary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+            <Card className="bg-linear-to-br from-card/95 via-card/90 to-accent/5 backdrop-blur-md border-2 border-accent/30 shadow-2xl relative overflow-hidden group">
+              <div className="absolute inset-0 bg-linear-to-br from-accent/5 via-transparent to-primary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
               <CardContent className="p-6 relative z-10">
                 <div className="mb-6">
                   <h3 className="text-2xl font-serif font-semibold text-accent mb-2">Availability</h3>
@@ -305,8 +305,8 @@ export default function ContactSection() {
           </div>
 
           <div className="space-y-6">
-            <Card className="bg-gradient-to-br from-card/95 via-card/90 to-secondary/5 backdrop-blur-md border-2 border-secondary/30 shadow-2xl relative overflow-hidden group">
-              <div className="absolute inset-0 bg-gradient-to-br from-secondary/5 via-transparent to-accent/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+            <Card className="bg-linear-to-br from-card/95 via-card/90 to-secondary/5 backdrop-blur-md border-2 border-secondary/30 shadow-2xl relative overflow-hidden group">
+              <div className="absolute inset-0 bg-linear-to-br from-secondary/5 via-transparent to-accent/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
               <CardContent className="p-6 relative z-10">
                 <div className="mb-6">
                   <h3 className="text-2xl font-serif font-semibold text-secondary mb-2">Contact Information</h3>
@@ -317,7 +317,7 @@ export default function ContactSection() {
                     const IconComponent = item.icon
                     return (
                       <div key={item.label} className="flex items-center space-x-4">
-                        <div className="w-12 h-12 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-full flex items-center justify-center border border-primary/30 flex-shrink-0">
+                        <div className="w-12 h-12 bg-linear-to-br from-primary/20 to-secondary/20 rounded-full flex items-center justify-center border border-primary/30 shrink-0">
                           <IconComponent className="w-5 h-5 text-primary" />
                         </div>
                         <div className="flex-1">
@@ -348,7 +348,7 @@ export default function ContactSection() {
               </CardContent>
             </Card>
 
-            <Card className="bg-gradient-to-br from-primary via-primary/90 to-secondary text-primary-foreground shadow-2xl border-2 border-primary-foreground/20 relative overflow-hidden group">
+            <Card className="bg-linear-to-br from-primary via-primary/90 to-secondary text-primary-foreground shadow-2xl border-2 border-primary-foreground/20 relative overflow-hidden group">
               <div className="absolute top-0 right-0 w-24 h-24 bg-primary-foreground/10 rounded-full -translate-y-12 translate-x-12 pattern-dancheong"></div>
               <CardContent className="p-6 relative z-10">
                 <div className="mb-6">

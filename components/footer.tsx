@@ -17,32 +17,32 @@ export default function Footer() {
       icon: Github,
       label: "GitHub",
       korean: "깃허브",
-      href: "https://github.com/sarthak",
+      href: "https://github.com/INSANE-RYAN",
     },
     {
       icon: Linkedin,
       label: "LinkedIn",
       korean: "링크드인",
-      href: "https://linkedin.com/in/sarthak",
+      href: "https://www.linkedin.com/in/sarthak-gupta-a7544628b/",
     },
     {
       icon: Instagram,
       label: "Instagram",
       korean: "인스타그램",
-      href: "https://instagram.com/sarthak",
+      href: "https://www.instagram.com/_____sarthak_20/",
     },
   ]
 
   const contactInfo = [
     {
       icon: Mail,
-      text: "sarthak.dev@example.com",
-      href: "mailto:sarthak.dev@example.com",
+      text: "guptasarthak7890@gmail.com",
+      href: "mailto:guptasarthak7890@gmail.com",
     },
     {
       icon: Phone,
-      text: "+91 98765 43210",
-      href: "tel:+919876543210",
+      text: "+91 9588795122",
+      href: "tel:+919588795122",
     },
     {
       icon: MapPin,
