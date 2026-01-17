@@ -43,7 +43,7 @@ export default function ContactSection() {
       )
 
       // Create mailto link
-      const mailtoLink = `mailto:sarthak.dev@example.com?subject=${subject}&body=${body}`
+      const mailtoLink = `mailto:guptasarthak7890@gmail.com?subject=${subject}&body=${body}`
 
       // Simulate processing time for better UX
       await new Promise((resolve) => setTimeout(resolve, 1500))
@@ -68,7 +68,7 @@ export default function ContactSection() {
       const body = encodeURIComponent(
         `Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`,
       )
-      const mailtoLink = `mailto:sarthak.dev@example.com?subject=${subject}&body=${body}`
+      const mailtoLink = `mailto:guptasarthak7890@gmail.com?subject=${subject}&body=${body}`
       window.location.href = mailtoLink
     }
   }
@@ -78,15 +78,15 @@ export default function ContactSection() {
       icon: Mail,
       label: "Email",
       korean: "이메일",
-      value: "sarthak.dev@example.com", // Updated email address
-      href: "mailto:sarthak.dev@example.com",
+      value: "guptasarthak7890@gmail.com", // Updated email address
+      href: "mailto:guptasarthak7890@gmail.com",
     },
     {
       icon: Phone,
       label: "Phone",
       korean: "전화",
-      value: "+91 98765 43210",
-      href: "tel:+919876543210",
+      value: "+91 958879-5122",
+      href: "tel:+919588795122",
     },
     {
       icon: MapPin,
@@ -103,19 +103,19 @@ export default function ContactSection() {
       icon: Github,
       label: "GitHub",
       korean: "깃허브",
-      href: "https://github.com/sarthak",
+      href: "https://github.com/INSANE-RYAN",
     },
     {
       icon: Linkedin,
       label: "LinkedIn",
       korean: "링크드인",
-      href: "https://linkedin.com/in/sarthak",
+      href: "https://www.linkedin.com/in/sarthak-gupta-a7544628b/",
     },
     {
       icon: Instagram,
       label: "Instagram",
       korean: "인스타그램",
-      href: "https://instagram.com/sarthak",
+      href: "https://www.instagram.com/_____sarthak_20/",
     },
   ]
 
