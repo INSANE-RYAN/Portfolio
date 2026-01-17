@@ -85,7 +85,7 @@ export default function ContactSection() {
       icon: Phone,
       label: "Phone",
       korean: "전화",
-      value: "+91 958879-5122",
+      value: "+91 9588795122",
       href: "tel:+919588795122",
     },
     {
