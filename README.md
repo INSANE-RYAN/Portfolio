@@ -1,4 +1,4 @@
-# 🚀 Sarthak Portfolio (Next.js)
+# 🚀 Portfolio (Next.js)
 
 This is a modern, fully responsive **personal portfolio website** built using **Next.js 15, React 19, Tailwind CSS, and Radix UI components**. The project showcases skills, projects, and professional information with a clean UI, smooth interactions, and scalable architecture.
 
